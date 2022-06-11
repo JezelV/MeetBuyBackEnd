@@ -24,6 +24,14 @@ public class usuario {
 		this.telefono = telefono;
 	}
 	
+	
+	//Constructor vacio para el metodo POST
+		public usuario() {
+			super();
+			total++;
+			this.id = total;
+	}
+	
 	//Getters y Setters
 	public String getUsuario() {
 		return usuario;

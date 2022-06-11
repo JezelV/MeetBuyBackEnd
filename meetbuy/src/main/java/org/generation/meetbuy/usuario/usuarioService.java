@@ -18,7 +18,12 @@ public final ArrayList <usuario> lista = new ArrayList<usuario>();
 				"Argemiro Haro",
 				"98765",
 				"arge@gmail.com",
-				"369852147"));
+				"3698521475"));
+		lista.add(new usuario("Licht23",
+				"Jessica Lopez",
+				"hola123",
+				"Jessica@gmail.com",
+				"1122334455"));
 	}
 	
 	public ArrayList<usuario> getUsuario() {
@@ -36,4 +41,35 @@ public final ArrayList <usuario> lista = new ArrayList<usuario>();
 		return tmpUser;
 	}
 		//Metodo para traer un objeto por un id
+
+	//Metodo para agregar usuarios (POST)
+	public void addUsuario(usuario user) {
+		lista.add(user);		
+	}
+	
+	//Metodo para cambiar parametros de los usuarios (PUT)
+	public void updateUsuarios(Long userId, String usuario, String nombre, String contrasenia, String correo,
+			String telefono) {
+		for(usuario user: lista) {
+			if(user.getId()==userId) {
+				if(usuario!=null) user.setUsuario(usuario);
+				if(nombre!=null) user.setNombre(nombre);
+				if(contrasenia!=null) user.setContrasenia(contrasenia);
+				if(correo!=null) user.setCorreo(correo);
+				if(telefono!=null) user.setTelefono(telefono);
+			}
+		}
+	}
+	
+	//Metodo para eliminar usuario (DELETE)
+	public void deleteUsuario(Long userId) {
+		for(usuario user: lista) {
+			if(user.getId()==userId){
+				lista.remove(user);
+				break;
+			}
+		}
+	}
+	
+	
 }
