@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <qualifiedTypeNameHistroy/>
+=======
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.generation.meetbuy.services.usuarioService"/>
+    <fullyQualifiedTypeName name="org.generation.meetbuy.entities.usuario"/>
+</qualifiedTypeNameHistroy>
+>>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
