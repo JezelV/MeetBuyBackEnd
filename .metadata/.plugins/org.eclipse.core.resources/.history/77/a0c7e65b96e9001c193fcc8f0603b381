@@ -24,7 +24,6 @@ public class usuario {
 		this.telefono = telefono;
 	}
 	
-	
 	//Constructor vacio para el metodo POST
 		public usuario() {
 			super();

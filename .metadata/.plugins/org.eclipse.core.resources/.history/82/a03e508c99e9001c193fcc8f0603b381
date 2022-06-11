@@ -63,12 +63,7 @@ public final ArrayList <usuario> lista = new ArrayList<usuario>();
 	
 	//Metodo para eliminar usuario (DELETE)
 	public void deleteUsuario(Long userId) {
-		for(usuario user: lista) {
-			if(user.getId()==userId){
-				lista.remove(user);
-				break;
-			}
-		}
+		
 	}
 	
 	
