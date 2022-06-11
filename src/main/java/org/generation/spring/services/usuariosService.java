@@ -1,7 +1,9 @@
-package org.generation.spring.usuarios;
+package org.generation.spring.services;
 
 
 import java.util.ArrayList;
+
+import org.generation.spring.entities.usuarios;
 import org.springframework.stereotype.Service;
 
 @Service

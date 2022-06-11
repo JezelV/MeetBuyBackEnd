@@ -1,4 +1,4 @@
-package org.generation.spring.usuarios;
+package org.generation.spring.entities;
 
 
 

@@ -1,7 +1,10 @@
-package org.generation.spring.usuarios;
+package org.generation.spring.controllers;
 
 
 import java.util.List;
+
+import org.generation.spring.entities.usuarios;
+import org.generation.spring.services.usuariosService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
