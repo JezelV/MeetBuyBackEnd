@@ -2,7 +2,7 @@ package org.generation.meetbuy.producto;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Arrays;
 import org.generation.meetbuy.usuario.usuario;
 import org.springframework.stereotype.Service;
 
@@ -53,7 +53,7 @@ public class productoService {
 		List<producto> tmpList = null;
 		for(producto prod: lista){
 			if(prod.getCategoriaP()==prodCategoria) {
-				tmpList.add();
+				tmpList.add(prod);
 			}
 		}
 		return tmpList;
