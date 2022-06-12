@@ -1,0 +1,19 @@
+package org.generation.meetbuy.producto;
+
+import java.util.ArrayList;
+import org.springframework.stereotype.Service;
+
+@Service
+public class productoService {
+	
+	public final ArrayList <producto> lista = new ArrayList<producto>();
+	
+	public productoService() {
+		lista.add(new producto("Papas Sabritas",
+				15.5,
+				50,
+				"papasSabritas.jpg",
+				"Comida",
+				"Papas sabritas de 180 grms."));
+	}
+}
