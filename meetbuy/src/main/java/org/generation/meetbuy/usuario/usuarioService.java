@@ -71,5 +71,16 @@ public final ArrayList <usuario> lista = new ArrayList<usuario>();
 		}
 	}
 	
+	//Metodo GET de un usuario por correo
+	public usuario getUsuario(String userCorreo) {
+		usuario tmpUser = null;
+		for(usuario user: lista) {
+			if(user.getCorreo()==userCorreo) {
+				tmpUser = user;
+			}
+		}
+		return tmpUser;
+	}
+	
 	
 }

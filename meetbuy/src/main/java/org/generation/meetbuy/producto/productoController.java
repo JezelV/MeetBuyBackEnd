@@ -2,7 +2,7 @@ package org.generation.meetbuy.producto;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController //estamos diciendo a nuestro controlador que va a manejar la entidad o producto y en este caso, vamos a utilizar metodos GET, POST, PUT y DELETE, le decimos a Spring que esta clase es un controlador
 @RequestMapping(path="/Meet&Buy/producto/")
-//@CrossOrigin(origins="http://127.0.0.1:5500/index.html")
+@CrossOrigin(origins="http://127.0.0.1:5501")
 
 public class productoController {
 	

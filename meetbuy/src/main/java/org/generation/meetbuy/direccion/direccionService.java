@@ -11,30 +11,24 @@ public final ArrayList <direccion> lista = new ArrayList<direccion>();
 		lista.add(new direccion(
 				"Eduardo Elizondo",
 				"110",
-				"",
 				"66700",
 				"El Saladito",
-				"Marin",
 				"Marin",
 				"Nuevo Leon"
 				));
 		lista.add(new direccion(
 				"Eduardo Elizondo",
 				"210",
-				"",
 				"66700",
 				"El Saladito",
-				"Marin",
 				"Marin",
 				"Nuevo Leon"
 				));
 		lista.add(new direccion(
 				"Eduardo Elizondo",
 				"310",
-				"",
 				"66700",
 				"El Saladito",
-				"Marin",
 				"Marin",
 				"Nuevo Leon"
 				));

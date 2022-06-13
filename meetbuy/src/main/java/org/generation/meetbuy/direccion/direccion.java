@@ -6,27 +6,23 @@ public class direccion {
 	private static int total=0;
 	//Propiedades
 	private String calle;
-	private String numeroExt;
 	private String numeroInt;
 	private String codigoPostal;
 	private String colonia;
 	private String municipio;
-	private String ciudad;
 	private String estado;
 	
 	//Constructor
-	public direccion(String calle, String numeroExt, String numeroInt, String codigoPostal, String colonia,
-			String municipio, String ciudad, String estado) {
+	public direccion(String calle, String numeroInt, String codigoPostal, String colonia,
+			String municipio, String estado) {
 		super();
 		total++;
 		this.id = total;
 		this.calle = calle;
-		this.numeroExt = numeroExt;
 		this.numeroInt = numeroInt;
 		this.codigoPostal = codigoPostal;
 		this.colonia = colonia;
 		this.municipio = municipio;
-		this.ciudad = ciudad;
 		this.estado = estado;
 	}
 	//Constructor vacio para el metodo POST
@@ -42,12 +38,6 @@ public class direccion {
 	}
 	public void setCalle(String calle) {
 		this.calle = calle;
-	}
-	public String getNumeroExt() {
-		return numeroExt;
-	}
-	public void setNumeroExt(String numeroExt) {
-		this.numeroExt = numeroExt;
 	}
 	public String getNumeroInt() {
 		return numeroInt;
@@ -73,12 +63,6 @@ public class direccion {
 	public void setMunicipio(String municipio) {
 		this.municipio = municipio;
 	}
-	public String getCiudad() {
-		return ciudad;
-	}
-	public void setCiudad(String ciudad) {
-		this.ciudad = ciudad;
-	}
 	public String getEstado() {
 		return estado;
 	}
@@ -91,9 +75,8 @@ public class direccion {
 	
 	@Override
 	public String toString() {
-		return "direccion [calle=" + calle + ", numeroExt=" + numeroExt + ", numeroInt=" + numeroInt + ", codigoPostal="
-				+ codigoPostal + ", colonia=" + colonia + ", municipio=" + municipio + ", ciudad=" + ciudad
-				+ ", estado=" + estado + "]";
+		return "direccion [calle=" + calle + ", numeroInt=" + numeroInt + ", codigoPostal="
+				+ codigoPostal + ", colonia=" + colonia + ", municipio=" + municipio + ", estado=" + estado + "]";
 	}
 	
 }

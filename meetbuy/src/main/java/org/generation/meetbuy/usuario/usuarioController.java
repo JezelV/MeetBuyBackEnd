@@ -3,7 +3,7 @@ package org.generation.meetbuy.usuario;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController //estamos diciendo a nuestro controlador que va a manejar la entidad o producto y en este caso, vamos a utilizar metodos GET, POST, PUT y DELETE, le decimos a Spring que esta clase es un controlador
 @RequestMapping(path="/Meet&Buy/usuario/")
-//@CrossOrigin(origins="http://127.0.0.1:5500/index.html")
+@CrossOrigin(origins="http://127.0.0.1:5501")
 
 public class usuarioController {
 private final usuarioService userService;
@@ -29,15 +29,22 @@ private final usuarioService userService;
 	
 ////////////////////////////Aqui empiezan las solicitudes//////////////////////////////////
 	
-	@GetMapping
+	//Solicitud GET para todos los usuarios
+	@GetMapping 
 	public List<usuario> getUsuario(){
 		return userService.getUsuario(); //quiero que regrese los prodcutos
 	}
 	
-	//Solicitud GET para un solo producto
+	//Solicitud GET para un solo usuario
 	@GetMapping (path="{userID}")
 	public usuario getUsuario(@PathVariable("userID")Long userId){
 		return userService.getUsuario(userId);
+	}
+	
+	//Solicitud GET para un usuario por correo
+	@GetMapping(path="{correo}")
+	public usuario getUsuario(@PathVariable("correo")String userCorreo) {
+		return userService.getUsuario(userCorreo);
 	}
 	
 	//metodo POST para crear nuevos usuarios
