@@ -1,4 +1,4 @@
-package org.generation.meetbuy.metodoDePago;
+package org.generation.meetbuy.model;
 
 public class tarjeta {
 		//Id

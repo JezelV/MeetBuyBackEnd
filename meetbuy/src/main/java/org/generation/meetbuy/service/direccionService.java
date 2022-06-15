@@ -1,6 +1,8 @@
-package org.generation.meetbuy.direccion;
+package org.generation.meetbuy.service;
 
 import java.util.ArrayList;
+
+import org.generation.meetbuy.model.direccion;
 import org.springframework.stereotype.Service;
 
 @Service

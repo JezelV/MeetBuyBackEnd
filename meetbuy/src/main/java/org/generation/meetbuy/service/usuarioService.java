@@ -1,6 +1,8 @@
-package org.generation.meetbuy.usuario;
+package org.generation.meetbuy.service;
 
 import java.util.ArrayList;
+
+import org.generation.meetbuy.model.usuario;
 import org.springframework.stereotype.Service;
 
 @Service

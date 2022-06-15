@@ -1,4 +1,4 @@
-package org.generation.meetbuy.usuario;
+package org.generation.meetbuy.model;
 
 public class usuario {
 	//propiedades
