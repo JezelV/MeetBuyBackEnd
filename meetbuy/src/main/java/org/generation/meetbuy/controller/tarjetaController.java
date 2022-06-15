@@ -1,6 +1,9 @@
-package org.generation.meetbuy.metodoDePago;
+package org.generation.meetbuy.controller;
 
 import java.util.List;
+
+import org.generation.meetbuy.model.tarjeta;
+import org.generation.meetbuy.service.tarjetaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;

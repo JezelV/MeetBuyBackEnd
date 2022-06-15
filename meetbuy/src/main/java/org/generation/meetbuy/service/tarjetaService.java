@@ -1,6 +1,8 @@
-package org.generation.meetbuy.metodoDePago;
+package org.generation.meetbuy.service;
 
 import java.util.ArrayList;
+
+import org.generation.meetbuy.model.tarjeta;
 import org.springframework.stereotype.Service;
 @Service
 public class tarjetaService {

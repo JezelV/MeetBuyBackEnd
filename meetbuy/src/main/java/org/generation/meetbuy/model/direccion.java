@@ -1,4 +1,4 @@
-package org.generation.meetbuy.direccion;
+package org.generation.meetbuy.model;
 
 public class direccion {
 	//Id

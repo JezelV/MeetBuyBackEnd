@@ -1,6 +1,9 @@
-package org.generation.meetbuy.direccion;
+package org.generation.meetbuy.controller;
 
 import java.util.List;
+
+import org.generation.meetbuy.model.direccion;
+import org.generation.meetbuy.service.direccionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
