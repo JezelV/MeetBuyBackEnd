@@ -22,7 +22,7 @@ public final ArrayList <direccion> lista = new ArrayList<direccion>();
 				"Eduardo Elizondo",
 				"210",
 				"",
-				"66700",
+				"66703",
 				"El Saladito",
 				"Marin",
 				"Marin",
@@ -54,8 +54,7 @@ public final ArrayList <direccion> lista = new ArrayList<direccion>();
 		}
 		return tmpDir;
 	}
-		//Metodo para traer una direccion por un id
-
+	
 	//Metodo para agregar direccion (POST)
 	public void addDireccion(direccion dir) {
 		lista.add(dir);		
