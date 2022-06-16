@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="org.generation.meetbuy.model.usuario"/>
+    <fullyQualifiedTypeName name="org.generation.meetbuy.service.usuarioService"/>
+    <fullyQualifiedTypeName name="org.generation.meetbuy.utils.SHAUtil"/>
+</qualifiedTypeNameHistroy>
