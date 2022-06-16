@@ -1,93 +1,73 @@
 package org.generation.meetbuy.service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Arrays;
+import java.util.Optional;
 
 import org.generation.meetbuy.model.producto;
-import org.generation.meetbuy.model.usuario;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class productoService {
+	// Definimos repositorio
+	private final productoRepository prodRepository;
 	
-	public final ArrayList <producto> lista = new ArrayList<producto>();
-	
-	public productoService() {
-		lista.add(new producto("Papas Sabritas",
-				15.5,
-				50,
-				"papasSabritas.jpg",
-				"Comida",
-				"Papas sabritas de 180 grms."));
-		lista.add(new producto("Refrigerador Samsung",
-				15000.00,
-				2000,
-				"refri.jpg",
-				"Electrodomesticos",
-				"Refri potente."));
-		lista.add(new producto("Televisor LG",
-				12000.00,
-				1000,
-				"tele.jpg",
-				"Electrodomesticos",
-				"Tele 4k FullHD papau."));
+	// Inicializamos
+	@Autowired
+	public productoService(productoRepository prodRepository) {
+		this.prodRepository = prodRepository;
 	}
 
-	//Metodo Get para la lista
+	// Comenzar a utilizar metodos de nuestro Repository
+	// Get productos
 	public List<producto> getProducto() {
-		return lista;
+		return prodRepository.findAll();
 	}
-	
-	//Metodo Get por id
+
+	// Get producto
 	public producto getProducto(Long prodId) {
-		producto tmpProd = null;
-		for(producto prod: lista){
-			if(prod.getId()==prodId){
-				tmpProd = prod;
-			}
-		}
-		return tmpProd;
+		return prodRepository.findById(prodId).orElse(null);
 	}
-	
-	//Metodo Get para categoria
-	public List<producto> getProducto(String prodCategoria){
-		List<producto> tmpList = null;
-		for(producto prod: lista){
-			if(prod.getCategoriaP()==prodCategoria) {
-				tmpList.add(prod);
-			}
-		}
-		return tmpList;
-	}
-	
-	//Metodo Post 
+
+	// SET producto
 	public void addProducto(producto prod) {
-		lista.add(prod);		
+		// Verificar si existe
+		Optional<producto> productoByName = prodRepository.findByName(prod.getNombreP());
+		if(productoByName.isPresent()) {
+			throw new IllegalStateException("El producto ya existe"); // Lanza error en caso de que exista
+		} else {
+			prodRepository.save(prod); // Guarda los datos en caso de que no exista
+		}	
 	}
-	
-	//Metodo Put
-	public void updateProdcuto(Long prodId, String nombreP, Double precioP, Integer cantidadP, String imgP,
-			String categoriaP, String descripcionP) {
-		for(producto prod: lista) {
-			if(prod.getId()==prodId) {
-				if(nombreP!=null) prod.setNombreP(nombreP);
-				if(precioP!=null) prod.setPrecioP(precioP);
-				if(cantidadP!=null) prod.setCantidadP(cantidadP);
-				if(imgP!=null) prod.setImgP(imgP);
-				if(categoriaP!=null) prod.setCategoriaP(categoriaP);
-				if(descripcionP!=null) prod.setDescripcionP(descripcionP);
-			}
-		}
-	}
-	
-	//Metodo Delete
+
+	// Revisamos si existe el producto
+	// If true = se elimina
+	// If false = no se elimina y lanzamos exception
 	public void deleteProducto(Long prodId) {
-		for(producto prod: lista) {
-			if(prod.getId()==prodId){
-				lista.remove(prod);
-				break;
-			}
+		if(prodRepository.findById(prodId) != null) {
+			prodRepository.deleteById(prodId);
+		} else {
+			throw new IllegalStateException("El producto no existe");
 		}
 	}
+
+	public void updateProducto(Long prodId, String nombreP, Double precioP, Integer cantidadP, String imgP, String descripcionP) {
+		// Verifica si existe
+		if(prodRepository.findById(prodId) != null) {
+			// Vamos a setear cada parametro
+			producto p = prodRepository.findById(prodId).get();
+			if(nombreP != null) p.setNombreP(nombreP);
+			if(precioP != null) p.setPrecioP(precioP);
+			if(cantidadP !=0) p.setCantidadP(cantidadP);
+			if(imgP != null) p.setImgP(imgP);
+			if(descripcionP != null) p.setDescripcionP(descripcionP);
+			
+			// Guardamos de forma persistente
+			prodRepository.save(p);
+		} else {
+			// Lanzamos exception
+			throw new IllegalStateException("El producto no existe");
+		}
+	}
+	
 }

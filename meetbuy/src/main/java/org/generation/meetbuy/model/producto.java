@@ -1,40 +1,52 @@
 package org.generation.meetbuy.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+// Definimos tabla de MySQL
+@Entity
+@Table(name="producto")
 public class producto {
-	//Propiedades
+	// Definimos llave primaria
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "idproducto", unique = true, nullable = false)
+	private Long id;
 	private String nombreP;
 	private Double precioP;
 	private Integer cantidadP;
 	private String imgP;
-	private String categoriaP;
 	private String descripcionP;
 	
-	//Id
-	private int id;
-	private static int total = 0;
 	
-	//Constructor 
-	public producto(String nombreP, Double precioP, Integer cantidadP, String imgP, String categoriaP,
-			String descripcionP) {
+
+	
+
+	public producto(Long id, String nombreP, Double precioP, Integer cantidadP, String imgP, String descripcionP) {
 		super();
-		total++;
-		this.id=total;
+		this.id = id;
 		this.nombreP = nombreP;
 		this.precioP = precioP;
 		this.cantidadP = cantidadP;
 		this.imgP = imgP;
-		this.categoriaP = categoriaP;
 		this.descripcionP = descripcionP;
 	}
-	
-	//Constructor vacio POST
-	public producto() {
-		super();
-		total++;
-		this.id=total;
+
+	public producto() {}
+
+	public Long getId() {
+		return id;
 	}
-	
-	//Getters y Setters
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getNombreP() {
 		return nombreP;
 	}
@@ -67,14 +79,6 @@ public class producto {
 		this.imgP = imgP;
 	}
 
-	public String getCategoriaP() {
-		return categoriaP;
-	}
-
-	public void setCategoriaP(String categoriaP) {
-		this.categoriaP = categoriaP;
-	}
-
 	public String getDescripcionP() {
 		return descripcionP;
 	}
@@ -83,13 +87,11 @@ public class producto {
 		this.descripcionP = descripcionP;
 	}
 
-	public int getId() {
-		return id;
-	}
-
 	@Override
 	public String toString() {
-		return "producto [nombreP=" + nombreP + ", precioP=" + precioP + ", cantidadP=" + cantidadP + ", imgP=" + imgP
-				+ ", categoriaP=" + categoriaP + ", descripcionP=" + descripcionP + "]";
+		return "producto [id=" + id + ", nombreP=" + nombreP + ", precioP=" + precioP + ", cantidadP=" + cantidadP
+				+ ", imgP=" + imgP + ", descripcionP=" + descripcionP + "]";
 	}
+
+	
 }
