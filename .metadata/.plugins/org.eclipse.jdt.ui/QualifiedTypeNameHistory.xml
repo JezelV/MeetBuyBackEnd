@@ -2,6 +2,9 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="org.generation.meetbuy.model.usuario"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="org.generation.meetbuy.service.usuarioService"/>
     <fullyQualifiedTypeName name="org.generation.meetbuy.utils.SHAUtil"/>
+=======
+>>>>>>> 8542bd6e15e859b18433436c7e721dc097bc9f28
 </qualifiedTypeNameHistroy>

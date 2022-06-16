@@ -1,22 +1,39 @@
 package org.generation.meetbuy.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+//Definimos tabla MySQL
+@Entity
+@Table(name="usuario")
 public class usuario {
 	//propiedades
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id", unique = true, nullable = false)
+	private Long id;
 	private String usuario;
 	private String nombre;
 	private String contrasenia;
 	private String correo;
 	private String telefono;
 	
-	//Id
-	private int id;
-	private static int total = 0;
+	@ManyToOne
+	@JoinColumn(name="direccion_fk_usuario")
+	@JsonBackReference
+	private direccion direccion;
 	
 	//Constructor
-	public usuario(String usuario, String nombre, String contrasenia, String correo, String telefono) {
+	public usuario(Long id, String usuario, String nombre, String contrasenia, String correo, String telefono) {
 		super();
-		total++;
-		this.id=total;
+		this.id = id;
 		this.usuario = usuario;
 		this.nombre = nombre;
 		this.contrasenia = contrasenia;
@@ -24,15 +41,20 @@ public class usuario {
 		this.telefono = telefono;
 	}
 	
-	
-	//Constructor vacio para el metodo POST
-		public usuario() {
-			super();
-			total++;
-			this.id = total;
+	//Constructor vacio
+	public usuario() {
+
 	}
 	
-	//Getters y Setters
+	//Getter y Setters
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getUsuario() {
 		return usuario;
 	}
@@ -73,13 +95,9 @@ public class usuario {
 		this.telefono = telefono;
 	}
 
-	public int getId() {
-		return id;
-	}
-
 	@Override
 	public String toString() {
-		return "usuario [usuario=" + usuario + ", nombre=" + nombre + ", contrasenia=" + contrasenia
+		return "usuario [id=" + id + ", usuario=" + usuario + ", nombre=" + nombre + ", contrasenia=" + contrasenia
 				+ ", correo=" + correo + ", telefono=" + telefono + "]";
 	}
 }
