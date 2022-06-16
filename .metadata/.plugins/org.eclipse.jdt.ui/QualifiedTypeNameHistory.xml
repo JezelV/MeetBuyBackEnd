@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <qualifiedTypeNameHistroy/>
 =======
 <qualifiedTypeNameHistroy>
@@ -7,3 +8,6 @@
     <fullyQualifiedTypeName name="org.generation.meetbuy.entities.usuario"/>
 </qualifiedTypeNameHistroy>
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+<qualifiedTypeNameHistroy/>
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7

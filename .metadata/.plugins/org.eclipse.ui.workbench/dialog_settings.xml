@@ -8,6 +8,7 @@
 			<item value="org.eclipse.buildship.ui.importwizards"/>
 		</list>
 	</section>
+<<<<<<< HEAD
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
@@ -15,4 +16,6 @@
 		</list>
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
 	</section>
+=======
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 </section>

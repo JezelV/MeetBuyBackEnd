@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 !SESSION 2022-06-10 23:53:44.289 -----------------------------------------------
 eclipse.buildId=4.23.0.I20220308-0310
 java.version=18.0.1.1
@@ -12,6 +13,9 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-06-10 23:53:58.378
 =======
 !SESSION 2022-06-10 23:27:19.293 -----------------------------------------------
+=======
+!SESSION 2022-06-15 22:43:19.172 -----------------------------------------------
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 eclipse.buildId=4.23.0.I20220308-0310
 java.version=18.0.1.1
 java.vendor=Oracle Corporation
@@ -19,20 +23,28 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.jface 2 0 2022-06-10 23:27:47.067
+!ENTRY org.eclipse.jface 2 0 2022-06-15 22:43:26.820
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-06-10 23:27:47.067
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-06-15 22:43:26.820
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3aebdb4,
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@347f0950,
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b477121,
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -40,6 +52,7 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 <<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4fd70118,
 		,,true),null),
@@ -53,16 +66,27 @@ Binding(CTRL+SHIFT+T,
 	org.eclipse.ui.contexts.window,,,system)
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-06-10 23:27:47.067
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21d561c9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-06-15 22:43:26.820
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
 		Rename the selected element,
 		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1db7c267,
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@671561b9,
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@752e50c6,
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -71,14 +95,19 @@ Binding(ALT+SHIFT+R,
 		Rename the selected item,
 		Category(org.eclipse.ui.category.file,File,null,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@516370c1,
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3aebdb4,
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2bef33e7,
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 !ENTRY org.eclipse.ui.navigator 2 0 2022-06-10 23:54:02.000
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
@@ -91,12 +120,15 @@ Binding(ALT+SHIFT+R,
 user global configuration and to define the default location to store repositories: 'C:\Users\jezel'. If this is
 =======
 !ENTRY org.eclipse.ui.navigator 2 0 2022-06-10 23:27:51.780
+=======
+!ENTRY org.eclipse.ui.navigator 2 0 2022-06-15 22:43:31.220
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
 
-!ENTRY org.eclipse.ui.navigator 2 0 2022-06-10 23:27:51.781
+!ENTRY org.eclipse.ui.navigator 2 0 2022-06-15 22:43:31.221
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
 
-!ENTRY org.eclipse.egit.ui 2 0 2022-06-10 23:27:51.807
+!ENTRY org.eclipse.egit.ui 2 0 2022-06-15 22:43:31.284
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\juano'. If this is
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
@@ -105,10 +137,14 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 4 2 2022-06-10 23:54:34.083
 =======
 !ENTRY org.eclipse.jface 4 2 2022-06-10 23:28:05.352
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+!ENTRY org.eclipse.jface 4 2 2022-06-15 22:43:46.314
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.handlers.IHandlerService.deactivateHandler(org.eclipse.ui.handlers.IHandlerActivation)" because "service" is null
@@ -164,8 +200,12 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.handlers.IHandlerS
 !ENTRY org.eclipse.jface 4 0 2022-06-10 23:54:34.085
 =======
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 4 0 2022-06-10 23:28:05.356
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+!ENTRY org.eclipse.jface 4 0 2022-06-15 22:43:46.318
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 !MESSAGE java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.handlers.IHandlerService.deactivateHandler(org.eclipse.ui.handlers.IHandlerActivation)" because "service" is null
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.handlers.IHandlerService.deactivateHandler(org.eclipse.ui.handlers.IHandlerActivation)" because "service" is null
@@ -221,8 +261,12 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.handlers.IHandlerS
 !ENTRY org.eclipse.jface 4 0 2022-06-10 23:54:34.089
 =======
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 4 0 2022-06-10 23:28:05.358
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+!ENTRY org.eclipse.jface 4 0 2022-06-15 22:43:46.320
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 !MESSAGE An error has occurred. See error log for more details.
 !STACK 0
 java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.handlers.IHandlerService.deactivateHandler(org.eclipse.ui.handlers.IHandlerActivation)" because "service" is null
@@ -273,6 +317,7 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.handlers.IHandlerS
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
 !SESSION 2022-06-10 23:54:35.078 -----------------------------------------------
 eclipse.buildId=4.23.0.I20220308-0310
@@ -287,6 +332,9 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-06-10 23:54:48.778
 =======
 !SESSION 2022-06-10 23:28:09.804 -----------------------------------------------
+=======
+!SESSION 2022-06-15 22:43:47.467 -----------------------------------------------
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 eclipse.buildId=4.23.0.I20220308-0310
 java.version=18.0.1.1
 java.vendor=Oracle Corporation
@@ -294,20 +342,28 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.jface 2 0 2022-06-10 23:28:16.983
+!ENTRY org.eclipse.jface 2 0 2022-06-15 22:43:54.967
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-06-10 23:28:16.984
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-06-15 22:43:54.967
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7baf7e2c,
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a045e85,
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1de6689c,
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -315,6 +371,7 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 <<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73d7e7aa,
 		,,true),null),
@@ -328,16 +385,27 @@ Binding(CTRL+SHIFT+T,
 	org.eclipse.ui.contexts.window,,,system)
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-06-10 23:28:16.984
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3d8512e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-06-15 22:43:54.967
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
 		Rename the selected element,
 		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@349686e8,
 =======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@118f39f3,
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@46f597f1,
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -345,6 +413,7 @@ Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
 		Rename the selected item,
 		Category(org.eclipse.ui.category.file,File,null,true),
+<<<<<<< HEAD
 <<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c3e7128,
 =======
@@ -393,44 +462,20 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+=======
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a045e85,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@48861d1,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2022-06-10 23:28:54.319
-!MESSAGE A conflict occurred for ALT+SHIFT+R:
-Binding(ALT+SHIFT+R,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
-		Rename the selected element,
-		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@118f39f3,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(ALT+SHIFT+R,
-	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
-		Rename the selected item,
-		Category(org.eclipse.ui.category.file,File,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7baf7e2c,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.ui.navigator 2 0 2022-06-10 23:28:57.761
+!ENTRY org.eclipse.ui.navigator 2 0 2022-06-15 22:43:58.068
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
 
-!ENTRY org.eclipse.ui.navigator 2 0 2022-06-10 23:28:57.815
+!ENTRY org.eclipse.ui.navigator 2 0 2022-06-15 22:43:58.101
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
 
-!ENTRY org.eclipse.egit.ui 2 0 2022-06-10 23:28:57.844
+!ENTRY org.eclipse.egit.ui 2 0 2022-06-15 22:43:58.115
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\juano'. If this is
 >>>>>>> e94745f4d1f71954fd2a4f058bfc3efa5d45b4a9

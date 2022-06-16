@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	<section name="JavaElementSearchActions">
 	</section>
@@ -25,6 +26,8 @@
 		<item key="create_constructor" value="false"/>
 		<item key="create_unimplemented" value="true"/>
 	</section>
+=======
+>>>>>>> 45e6eb2c657cc56df37094e4b9f81e662ac8e3b7
 	<section name="completion_proposal_size">
 	</section>
 	<section name="quick_assist_proposal_size">
