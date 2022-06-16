@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="org.generation.meetbuy.model.usuario"/>
 <<<<<<< HEAD
@@ -7,4 +8,8 @@
     <fullyQualifiedTypeName name="org.generation.meetbuy.utils.SHAUtil"/>
 =======
 >>>>>>> 8542bd6e15e859b18433436c7e721dc097bc9f28
+=======
+    <fullyQualifiedTypeName name="org.generation.meetbuy.model.producto"/>
+    <fullyQualifiedTypeName name="org.generation.meetbuy.service.metodoPagoService"/>
+>>>>>>> 7a2d8af065d371e2f24b7b6fff56f44e8e3e641c
 </qualifiedTypeNameHistroy>
